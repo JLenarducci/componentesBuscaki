@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Card - html</title>
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap img-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-imgs@1.5.0/font/bootstrap-imgs.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      @media (max-width: 576px){
+        .j-col-s{
+          flex: 0 0 auto;
+          width: 41.7%
+        }
+        .j-avatar{
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: solid white 5px;
+          margin-top: -85px;
+          margin-left: 31.7%;
+        }
+      }
+      @media (min-width: 576px){
+        .j-col-sm{
+          flex: 0 0 auto;
+          width: 42.8%
+        }
+        .j-avatar{
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: solid white 5px;
+          margin-top: -85px;
+          margin-left: 33%;
+        } 
+      }
+      @media (min-width: 768px){
+        .j-col-md{
+          flex: 0 0 auto;
+          width: 28%
+        }
+        .j-avatar{
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: solid white 5px;
+          margin-top: -85px;
+          margin-left: 40%;
+        }
+      }
+      @media (min-width: 992px){
+        .j-col-lg{
+          flex: 0 0 auto;
+          width: 20.9%;
+        }
+        .j-avatar{
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          border: solid white 5px;
+          margin-top: -85px;
+          margin-left: 31.7%;
+        }
+      }
+      @media (min-width: 1200px){
+        .j-col-xl{
+          flex: 0 0 auto;
+          width: 21.6%;
+        }
+        .j-avatar{
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: solid white 5px;
+          margin-top: -85px;
+          margin-left: 31.7%;
+        }
+      }
+      @media (min-width: 1400px){
+        .j-col-xxl{
+          flex: 0 0 auto;
+          width: 21.8%;
+        }
+      }
+    .container{
+      width: 80%;
+    }
+    .j-margin-left-2{
+      margin-left: 25px;
+    }
+    .j-margin-right-2{
+      margin-right: 25px;
+    }
+    .j-margin{
+      margin: 30px;
+    }
+    .j-icone-frete{
+      font-size: 20px;
+    }
+    .j-descriçao{
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .j-button{
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .j-boxshadow{
+      box-shadow: -1px 5px 19px 3px rgba(0,0,0,0.40);
+      border-radius: 15px 15px 15px 15px;
+    }
+    .j-img-produto{
+      margin: 10px;
+    }
+    .j-border{
+      border: solid cyan;
+      border-radius: 15px 15px 15px 15px;
+    }
+    .j-pointer{
+      cursor: pointer;
+    }
+    .j-img{
+      width: 100%;
+    }
+    .j-capa{
+      width: 100%;
+      height: 350px;
+      border: solid;
+    }
+    .j-col-3{
+      flex: 0 0 auto;
+      width: 21.8%;
+    }
+    </style>
+  </head>
+  <body>
+    
+  </body>
+</html>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+
+      function CapaNome(){
+          return(
+            <div>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div>
+                            <img src="https://marketplace.canva.com/EAD5DdSyaYI/1/0/1600w/canva-respira%C3%A7%C3%A3o-facebook-capa-EF9hf0DORFc.jpg" class="j-capa" alt="" />
+                        </div>
+                        <div className="col-lg-2 col-12">
+                            <img src='./img/perfil.jpg' className="j-avatar" alt="" />
+                        </div>
+                        <div className="col-xl-10  col-lg-10">
+                            <div className="row text-center">
+                              <h3 className="col-xl-6  col-lg-6 col-md-12 col-sm-12">
+                                  Marileide Soares Cunha
+                              </h3>
+                              <h4 className="col-xl-6  col-lg-6 col-md-3 col-sm-6">
+                                  Ouro <i className="bi bi-star"></i>
+                              </h4>
+                              <h5 className="col-xl-4  col-lg-4 col-md-3 col-sm-6">
+                                  Pagina Principal
+                              </h5>
+                              <h5 className="col-xl-4  col-lg-4 col-md-3 col-sm-6">
+                                  Todos os Produtos
+                              </h5>
+                              <h5 className="col-xl-4  col-lg-4 col-md-3 col-sm-6">
+                                  Avaliações
+                              </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          )
+      }
+
+
+
+
+
+      function JoaoMaisVendido(props) {
+          return (
+          <div className="card j-border j-pointer j-col-xxl j-col-xl j-col-lg j-col-md j-col-sm j-col-s m-3 p-2" key={props.id}  >
+            <img className="img-card" src={props.image} className="card-img-top" alt={props.alt} />
+            <div className="card-body">
+              <h5 className="card-title">{props.preço}</h5>
+              <p className="h6">{props.title}</p>
+            </div>
+          </div>
+          )
+      }
+      function ProdutosVendedor(){
+          const ProdutosVendedor = [
+              {
+                  id: 101,
+                  Image:"C:/Users/Proanooooooo/Desktop/componentes/vendedor/mais_vendidos/img/celular.png",
+                  Title:'Celular xiaomi',
+                  Preço:'199,90',
+              },
+              {
+                  id: 202,
+                  Image:"C:/Users/Proanooooooo/Desktop/componentes/vendedor/mais_vendidos/img/celular2.png",
+                  Title:'Celular xiaomi',
+                  Preço:'199,90',
+              },
+              {
+                  id: 303,
+                  Image:"C:/Users/Proanooooooo/Desktop/componentes/vendedor/mais_vendidos/img/celular3.png",
+                  Title:'Celular xiaomi',
+                  Preço:'199,90',
+              },
+              {
+                  id: 404,
+                  Image:"C:/Users/Proanooooooo/Desktop/componentes/vendedor/mais_vendidos/img/celular4.png",
+                  Title:'Celular xiaomi',
+                  Preço:'199,90',
+              }     
+          ]
+          return(
+              ProdutosVendedor.map(Produto=>(
+                <JoaoMaisVendido preço={Produto.Preço} title={Produto.Title} image={Produto.Image} /> 
+              ))
+          )
+      }
+      function JColunas(){
+        return(
+          <div class="container">
+            <div class="row">
+              <ProdutosVendedor />
+            </div>
+          </div>
+        )
+      }
+
+      function Vendedor (){
+          return(
+            <div>
+            <CapaNome />
+            <h2 className="container mt-5">Melhores Avaliados</h2>
+            <JColunas />
+            <h2 className="container mt-5">Recomendação do Vendedor</h2>
+            <JColunas />
+          </div>
+          )
+      }
+
+      function Template(){
+          return(
+          <div>
+            <Vendedor />
+          </div>
+          );
+      }
+      
+      let template = <Template />;    
+      
+      ReactDOM.render(
+          template,
+          document.getElementById('root')
+      )
+  </script>
+</body>
